@@ -12,7 +12,7 @@
 
 <header>
   <div class="brand">
-    <div class="brand-mark"></div>
+     <img class="brand-logo" src="images/logo.png" alt="TGTRANSCO">
     <div>
       <h1>IT Asset Maintenance Register</h1>
       <p>PART REPLACEMENT LOG · OFFICE IT DESK</p>
@@ -38,7 +38,7 @@
     <div class="stat-card"><div class="num" id="statComputers">0</div><div class="lbl">Computers covered</div></div>
   </div>
 
-  <div class="ticket" id="addTicket">
+  <div class="ticket" id="addTicket" style="display:none;">
     <div class="ticket-head" id="ticketToggle">
       <span>+ Log a new part replacement</span>
       <span class="chevron">▾</span>
@@ -87,7 +87,7 @@
           <th>Replacement part</th>
           <th>Date</th>
           <th>Work done by</th>
-          <th class="col-actions" id="actionsHeader">Actions</th>
+          <th class="col-actions" id="actionsHeader" style="display:none;">Actions</th>
         </tr>
       </thead>
       <tbody id="tableBody">

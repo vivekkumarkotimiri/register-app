@@ -39,13 +39,11 @@
     border-bottom:4px solid var(--accent-amber);
   }
   .brand{ display:flex; align-items:center; gap:14px; }
-  .brand-mark{
-    width:42px; height:42px; border-radius:8px;
-    background:repeating-linear-gradient(135deg, #fff 0 4px, transparent 4px 9px);
-    background-color:var(--accent-teal);
-    border:2px solid rgba(255,255,255,0.4);
+  .brand-logo{
+    height:80px;
+    width:auto;
     flex-shrink:0;
-  }
+    }
   .brand h1{
     font-family:'Space Grotesk', sans-serif;
     font-size:1.32rem;
