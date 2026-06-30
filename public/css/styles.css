@@ -82,6 +82,12 @@
   .btn-danger{ background:var(--danger-bg); color:var(--danger); padding:6px 10px; font-size:0.78rem; }
   .btn-danger:hover{ background:#F6D8D5; }
 
+  .clock{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+    color:#e6d7d9;
+    white-space:nowrap;
+  }
   .pill{
     font-family:'IBM Plex Mono', monospace;
     font-size:0.72rem;

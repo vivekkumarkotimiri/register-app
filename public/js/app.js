@@ -130,7 +130,19 @@ el("printBtn").addEventListener("click", () => {
     " · " + entries.length + " entries";
   window.print();
 });
-
+/* -------Live Date and Live Clock------- */
+function startLiveClock() {
+  const clockEl = el("liveClock");
+  function tick() {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+    const timeStr = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    clockEl.textContent = `${dateStr}  ·  ${timeStr}`;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+startLiveClock();
 /* ---------- Init ---------- */
 refreshEntries();
 // Keep the view in sync with what other computers add/delete.
